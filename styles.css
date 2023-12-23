@@ -1,0 +1,156 @@
+/* Media query to adapt the site for smaller screens */
+
+@media (max-width: 600px) {
+    body {
+        width: auto !important;
+        text-align: center;
+    }
+
+    .main-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        max-width: 100%;
+    }
+
+    .nav-item {
+        margin: 0 !important;
+    }
+
+    .featured-grid {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .container {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .news {
+        margin: 32px 12% !important;
+        border-top: 1px solid #333333;
+    }
+}
+
+/* -- */
+
+/* Styleguide */
+
+body {
+    font-size: 14px;
+    color: #333333;
+    font-family: Times, 'Times New Roman', Georgia, serif;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333333;
+    color: #fefefe;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header a {
+    color: #fefefe;
+    font-size: 120%;
+
+}
+.nav-item.current {
+    border-bottom: 3px solid #ff0000;
+}
+
+.nav-item:hover {
+    border-bottom: 3px solid #ff0000;
+}
+
+.container a {
+    color: #333333;
+}
+
+.featured-item:hover {
+    text-decoration: underline;
+    opacity: 0.6;
+}
+
+.news-item {
+    padding-bottom: 15px;
+}
+
+.has-span {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* -- */
+
+/* Extra */
+
+.main-nav {
+    display: inline-flex;
+    list-style: none;
+    align-items: center;
+    padding: 8px 3px;
+    margin: 3px;
+    width: 100%;
+}
+
+.nav-item {
+    margin: auto 16px;
+    transition: border-bottom 1s;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 1vw;
+    padding: 16px 0;
+}
+
+.featured-item {
+    transition: opacity 1s;
+}
+
+.featured-title {
+    margin: 8px 0;
+}
+
+.featured-img {
+    width: 100%;
+    height: 57%;
+    object-fit: cover;
+}
+
+.news {
+    margin: 60px 12% 32px;
+}
+
+.span-h1 {
+    font-size: large;
+}
+
+address, date {
+    font-style: normal;
+}
+
+.cta {
+    border-bottom: 1px solid #ff0000;
+    transition: background-color 1s;
+}
+
+.cta:hover {
+    background-color: #ffbaba;
+}
